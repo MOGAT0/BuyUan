@@ -1,0 +1,668 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+/* header */
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.navbar{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 60px;
+    width: 200px;
+    margin: 20px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.menu{
+    margin-left: 50px;
+}
+.menu a{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 40px 13px 40px 13px;
+}
+.menu a:hover{
+    background: linear-gradient(rgba(0,0,0,.3)30%,rgba(41, 198, 255, 0.6));
+}
+.acc{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    float: right;
+    margin: -70px 60px;
+}
+.acc img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+.acc img:hover{
+    box-shadow: 0 0 20px 10px rgba(135, 206, 250, 0.7);
+}
+/* ----slide show bg----- */
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+#slideimg{
+    width: 100%;
+    height: 100%;
+    animation: zoom 5s linear infinite;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    15%{
+        transform: scale(1);
+    }
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+    
+}
+/* contents */
+.content{
+    width: 60%;
+    margin: 250px auto;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.content h1{
+    font-size: 60px;
+    font-family: none;
+}
+.content h3{
+    width: 80%;
+    margin: 20px auto 50px;
+    font-weight: 100;
+    line-height: 25px;
+}
+.content button{
+    padding: 10px;
+    width: 250px;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid;
+    text-align: center;
+    cursor: pointer;
+    font-weight: normal;
+    transition: 0.4s;
+}
+.content button:hover{
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+/* account */
+.acc-content{
+    float: right;
+    width: 100px;
+    margin: -100px 30px;
+    text-align: center;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+.acc-content:target{
+    visibility: visible;
+    opacity: 1;
+}
+.acc-button{
+    margin-top: 100px;
+}
+.accbtn{
+    padding: 10px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: 200;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.accbtn:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+.close{
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.close:hover{
+    color: red;
+}
+/* acc body */
+.lgin{
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    transition: 0.4s ease;
+}
+.lgin:target{
+    visibility: visible;
+    opacity: 1;
+}
+.bx{
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 150px;
+}
+.closebtn{
+    float: right;
+    width: fit-content;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+.boxcontent{
+    width: fit-content;
+    margin: auto;
+}
+.boxcontent h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+}
+.boxcontent form{
+    margin-top: 40px;
+}
+.boxcontent form input{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: whitesmoke;
+}
+.logb{
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
+.logb button{
+    width: 320px;
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 50px;
+    background: linear-gradient(to right, cyan,fuchsia);
+    font-style: bold;
+    font-size: 20px;
+    color:  white;
+    transition: all 0.9s ease;
+}
+.boxcontent a{
+    text-align: center;
+}
+.regcont h2{
+    margin: auto;
+    margin-top: 30px;
+    width: fit-content;
+    font-size: 30px;
+}
+.regcont form{
+    width: fit-content;
+    margin: auto;
+}
+.regcont form input{
+    width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: none;
+}
+.regbtn{
+    width: fit-content;
+    margin: auto;
+    margin-top: 60px;
+}
+.regbtn button{
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(to right, cyan,fuchsia);
+    font-size: 20px;
+    color: white;
+}
+.rgbtn{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+/* featured products */
+.features{
+    text-align: center;
+    margin-top: 20px;
+}
+.border1{
+    margin: auto;
+    background-color: lightskyblue;
+    height: 5px;
+    border-radius: 50px;
+    border: 1px solid lightskyblue;
+    margin-bottom: 10px;
+    width: 100px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.prod-item{
+    width: 350px;
+    height: 500px;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 5px rgba(0,0,0,.5);
+    transition: 0.5s ease-in-out;
+}
+.row .prod-item:hover{
+    margin-top: 30px;
+}
+.ratings{
+    margin-left: 230px;
+}
+.ratings img{
+    height: 30px;
+    width: 30px;
+    box-shadow: none;
+    margin: 5px;
+    float: left;
+}
+.details{
+    margin-left: -190px;
+    margin-top: -30px;
+}
+.details p{
+    margin-top: 10px;
+    float: left;
+    margin-left: 240px;
+    text-align: left;
+}
+#details1 h1{
+    margin-left: -55px;
+}
+#details2 h1{
+    margin-left: 15px;
+}
+/* 2nd row */
+.row2{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.row2 img{
+    margin: 0 50px 0 50px;
+    height: 280px;
+    width: 200px;
+    box-shadow: 10px 10px 20px 5px rgba(0,0,0,.5);
+    transition: 0.5s ease-in-out;
+}
+.row2 .prod-item:hover{
+    margin-top: -16px;
+}
+.details2{
+    margin-left: -190px;
+    margin-top: 30px;
+}
+.details2 h1{
+    margin-left: 100px;
+    font-size: 20px;
+}
+.details2 p{
+    font-size: 15px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 240px;
+    text-align: left;
+}
+.ratings2{
+    margin-left: 230px;
+}
+.ratings2 img{
+    height: 20px;
+    width: 20px;
+    box-shadow: none;
+    margin: 5px;
+    float: left;
+}
+#fix h1{
+    margin-left: 30px;
+}
+#fix2 h1{
+    margin-left: 60px;
+}
+/* about */
+.about{
+    border-top: 1px solid gray;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+.cont{
+    margin-top: 100px;
+    display: flex;
+    margin-left: 155px;
+}
+.cont img{
+    margin-right: 100px;
+}
+.about-info h1{
+    margin-bottom: 50px;
+}
+.about-info P{
+    font-size: 30px;
+}
+/* contacts */
+.contact{
+    margin-top: 200px;
+    display: block;
+}
+.info-box{
+    height:300px;
+    width: 600px;
+    margin-top: 80px;
+    border: 2px solid none;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+}
+.info-box h1{
+    margin-bottom: 30px;
+}
+.contact img{
+    height: 50px;
+    width: 50px;
+}
+.box-content{
+    float: left;
+}
+.emailadd{
+    display: flex;
+    margin: 20px;
+}
+.phone{
+    display: flex;
+    margin: 20px;
+}
+.msg{
+    display: flex;
+    margin: 20px;
+}
+.box-content p{
+    margin: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+/* go to top */
+.top-btn{
+    position: fixed;
+    text-align: center;
+    line-height: 50px;
+    bottom: 55px;
+    right: 54px;
+    height:50px;
+    width: 50px;
+}
+.top-btn img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    height: 20vh;
+    padding: 50px;
+    margin-top: 100px;
+}
+.info{
+    padding: 0 230px 0 230px;
+    display: flex;
+}
+.downloadapp{
+    margin-right: 100px;
+}
+.downloadapp img{
+    border-radius: 5px;
+}
+.downloadapp h4{
+    font-size: 15px;
+}
+.downloadapp p{
+    margin: 20px 0 20px 0;
+    font-size: 12px;
+    font-weight: 100;
+}
+.footer-logo{
+    margin-right: 100px;
+    text-align: center;
+}
+.footer-logo img{
+    margin-bottom: 20px;
+}
+.footer-logo p{
+    font-size: 12px;
+}
+.useful-links{
+    margin-right: 50px;
+    text-align: center;
+}
+.useful-links p{
+    font-size: 12px;
+    margin: 5px;
+}
+.follow-us{
+    text-align: center;
+}
+.follow-us p{
+    font-size: 12px;
+    margin: 5px;
+}
+.border-bottom{
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding: 20px;
+}
+.border-bottom p{
+    font-size: 12px;
+}
+.playstore{
+    cursor: pointer;
+}
+.applestore{
+    cursor: pointer;
+}
+/* acc */
+/* .acc-bg{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+}
+.acc-bg:target{
+    opacity: 1;
+    visibility: visible;
+}
+.acc-box{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    float: right;
+    margin: 80px;
+    border-radius: 5px;
+}
+.ext{
+    float: right;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color:  black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: transparent;
+    transition: all 0.4s ease;
+    position: relative;
+}
+.ext:hover{
+    background-color: rgba(255, 127, 80, 0.27);
+}
+.btn-box{
+    width: fit-content;
+    height: fit-content;
+    margin: 20px auto;
+    border-radius: 50px;
+    border: 1px solid red;
+}
+.buttons{
+    margin: auto;
+    width: fit-content;
+}
+.accbtn{
+    justify-content: center;
+    margin: auto;
+    padding:10px 30px 10px 30px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.acc-act, .accbtn:hover{
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}
+.acc-body{
+    width: auto;
+    height: auto;
+}
+.acc-body input{
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    background-color: whitesmoke;
+    border: transparent;
+}
+.acc-body form{
+    height: auto;
+    width: fit-content;
+    margin: auto;
+}
+.acc-body .login{
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+.login button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+
+.bodycont{
+    margin: 20px;
+    scroll-behavior: smooth;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.bodycont::-webkit-scrollbar{
+    display: none;
+}
+.acc-body{
+    margin: 50px;
+} */
+@media only screen and (max-width:1000px){
+    .row{
+        display: block;
+        margin: auto;
+    }
+    .row2{
+        display: block;
+        margin: auto;
+    }
+    .slider{
+        justify-content: stretch;
+    }
+    .cont{
+        display: block;
+        margin: auto;
+    }
+    .top-btn{
+        position: fixed;
+        left: 50px;
+    }
+}

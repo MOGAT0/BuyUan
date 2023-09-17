@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.return{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.return a{
+    text-decoration: none;
+    color: white;
+}
+.retshop{
+    margin-right: 10px;
+    border: 1px solid lightskyblue;
+    padding: 10px;
+    border-radius: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: lightskyblue;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 10px;
+
+}
+.retshop:hover{
+    background-color: white;
+    border-color: lightskyblue;
+    color: lightskyblue;
+    margin-top: -3px;
+    margin-bottom: 13px;
+}
+.rethome{
+    margin-left: 10px;
+    border: 1px solid rgb(217, 216, 216);
+    padding: 10px;
+    border-radius: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: rgb(217, 216, 216);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.rethome:hover{
+    background-color: white;
+    border-color: rgb(217, 216, 216);
+    color: rgb(217, 216, 216);
+    margin-top: -3px;
+    margin-bottom: 3px;
+}
+.main h1{
+    text-align: center;
+}
+.main p{
+    display: inline-flex;
+    margin: 20px;
+    margin-left: 60px;
+}
+.main h3{
+    margin-left: 400px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.r input{
+    margin: 50px;
+}
+.r{
+    margin-top: -40px;
+    margin-left: 50px;
+}
+.r2{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.r2 input{
+    margin: 50px;
+}
+.r3{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.r3 input{
+    margin: 50px;
+}
+.r4{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.r4 input{
+    margin: 50px;
+}
+.r5{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.r5 input{
+    margin: 50px;
+}
+.xp{
+    margin-top: -120px;
+    float: right;
+    margin-right: 400px;
+}
+.border{
+    margin-top: 50px;
+    border-bottom: 2px solid black;
+}
+h5{
+    margin-top: 70px;
+    margin-left: 400px;
+}
+.comment{
+    margin-top: 50px;
+    margin-left: 400px;
+}
+.comment textarea{
+    height: 100px;
+    width: 670px;
+    resize: none;
+    padding: 10px;
+}
+.comment{
+    padding-top: -20px;
+}
+.send{
+    text-align: center;
+    margin-top: 50px;
+}
+.feedbtn{
+    padding: 10px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+.feedbtn:hover{
+    background-color: rgb(135, 135, 135);
+    color: white;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    height: 20vh;
+    padding: 50px;
+    margin-top: 100px;
+}
+.info{
+    padding: 0 230px 0 230px;
+    display: flex;
+}
+.downloadapp{
+    margin-right: 100px;
+}
+.downloadapp img{
+    border-radius: 5px;
+}
+.downloadapp h4{
+    font-size: 15px;
+}
+.downloadapp p{
+    margin: 20px 0 20px 0;
+    font-size: 12px;
+    font-weight: 100;
+}
+.footer-logo{
+    margin-right: 100px;
+    text-align: center;
+}
+.footer-logo img{
+    margin-bottom: 20px;
+}
+.footer-logo p{
+    font-size: 12px;
+}
+.useful-links{
+    margin-right: 50px;
+    text-align: center;
+}
+.useful-links p{
+    font-size: 12px;
+    margin: 5px;
+}
+.follow-us{
+    text-align: center;
+}
+.follow-us p{
+    font-size: 12px;
+    margin: 5px;
+}
+.border-bottom{
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding: 20px;
+}
+.border-bottom p{
+    font-size: 12px;
+}
+.playstore{
+    cursor: pointer;
+}
+.applestore{
+    cursor: pointer;
+}

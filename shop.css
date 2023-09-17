@@ -1,0 +1,1254 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+/* .allprod{
+    position: relative;
+} */
+#pic{
+    height: 500px;
+    width: 500px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.ratings{
+    color: rgb(255, 187, 0);
+}
+
+/* <header> */
+header{
+    position: absolute;
+    display: block;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,.3);
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 10vh;
+    padding: 10px;
+    background-color: black;
+}
+.main{
+    margin-left: 160px;
+    margin-top: -300px;
+}
+.nav_bar{
+    padding: 20px;
+    word-spacing: 30px;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    margin-top: 1.5vh;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+.navi{
+    margin-top: -2px;
+    width: fit-content;
+    float: left;
+    margin-right: 100px;
+}
+.search{
+    margin-top: -20px;
+    margin-left: 700px;
+}
+.cus span{
+    margin-left: 5px;
+}
+span2{
+    margin-left: 5px;
+    font-size: 10px;
+}
+span3{
+    margin-left: 90px;
+    color: orange;
+}
+.bar{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: whitesmoke;
+    padding: 5px;
+    font-size: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+.barbtn{
+    float: left;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: whitesmoke;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+}
+.barbtn img{
+    width: 80%;
+    height: 75%;
+    margin-top: 3px;
+    transition: 0.3s;
+}
+.barbtn img:hover{
+    background-color: rgba(188, 188, 188);
+    border-radius: 50px;
+}
+.nav_bar a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in;
+}
+.nav_bar a:hover{
+    color: lightskyblue;
+}
+/* shadow box */
+
+#shadow:hover{
+    transition: 0.4s ease;
+    box-shadow: 0 1px 20px 1px rgba(0,0,0,.3);
+    scale: 1.01;
+}
+/* dropbox */
+.dropdown {
+    position: relative;
+    display: block;
+}
+.dropdown-content {
+    border: 2px solid white;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: fit-content;
+    box-shadow: 2px 8px 16px 1px rgba(0,0,0,.9);
+    padding: 20px; 
+    margin-top: 20px;
+    margin-left: -75px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown .dropdown-content a:hover{
+    color: lightskyblue;
+    transition: 0.3s;
+}
+.dropbtn{
+    color: white;
+    margin-left: -70px;
+    margin-top: -1px;
+    position: absolute;
+    cursor: pointer;
+}
+.dropbtn:hover{
+    color: lightskyblue;
+}
+
+  /* cover */
+.coverforbtn{
+    position: absolute;
+    right: 0;
+    top: 500px;
+    float: right;
+    width: 155px;
+    height: 760px;
+    background-color: white;
+}
+.gotop{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 45px;
+    right: 30px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,.3);
+    transition: 0.4s;
+}
+.gotop:hover{
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,.5);
+}
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  .pic{
+    border: 3px solid;
+    border-radius: 50%;
+    border: none;
+  }
+  .pic2{
+    border: 2px solid;
+    border-radius: 5px;
+    border: none;
+  }
+
+
+/* <containers> */
+
+.container1{
+    display: inline-flex;
+    margin-top: 450px;
+}
+.container2{
+    display: inline-flex;
+}
+.container3{
+    display: inline-flex;
+}
+.container4{
+    display: inline-flex;
+}
+.content1{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/adidas\ peach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content2{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/adidas\ sweater\ gray.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content3{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/adidas\ sweater\ red.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content4{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/adidas\ unisex\ blue\ 1\,956.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content5{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/nike\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content6{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/jordan\ black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content7{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/jordan\ yellow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content8{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/lacoste\ green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content9{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/lacoste\ pink.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content10{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/lacoste\ white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content11{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/levis\ green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content12{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/levis\ white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content13{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/nike.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content14{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/nike\ blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content15{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/nike\ jordan\ white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content16{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/nike\ jumpan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content17{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/nike\ peace\ black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content18{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/nike\ pink.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content19{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/tnf\ white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content20{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(products/white\ lacoste.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content21{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/adidas\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content22{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/adidas\ blue.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content23{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/blauer\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content24{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/bomboogie\ orange.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content25{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/calvin\ klein\ tan.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content26{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/calvin\ klein\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content27{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/cavalli\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content28{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/converse\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content29{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/disclaimer\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content30{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/disclaimer\ tan.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content31{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/ea7\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content32{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/moschino\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content33{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/nike\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content34{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/nike\ black\ 2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content35{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/nike\ blue.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content36{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/nike\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content37{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/ralphlauren.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content38{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/tommy\ green.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content39{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/tommy\ orange.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content40{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(men/versace\ jeans\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content41{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/adidas\ pink.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content42{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/adidas\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content43{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/adidas\ white\ 2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content44{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/adidas\ white\ 3.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content45{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/calvin\ klein\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content46{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/elisabetta\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content47{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/elisabetta\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content48{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/gaelle\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content49{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/levis\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content50{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/max\ mara\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content51{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/moschino\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content52{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/moschino\ red.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content53{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/nike\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content54{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/only\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content55{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/tnf\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content56{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/tnf\ purple.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content57{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/tnf\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content58{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/tnf\ white2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content59{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/versace\ black.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content60{
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 300px;
+    background: url(women/versace\ white.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box1{
+    padding: 20px;
+}
+.box2{
+    padding: 20px;
+}
+.box3{
+    padding: 20px;
+}
+.box4{
+    padding: 20px;
+}
+.box5{
+    padding: 20px;
+}
+.box6{
+    padding: 20px;
+}
+.box7{
+    padding: 20px;
+}
+.box8{
+    padding: 20px;
+}
+.box9{
+    padding: 20px;
+}
+.box10{
+    padding: 20px;
+}
+.box11{
+    padding: 20px;
+}
+.box12{
+    padding: 20px;
+}
+.box13{
+    padding: 20px;
+}
+.box14{
+    padding: 20px;
+}
+.box15{
+    padding: 20px;
+}
+.box16{
+    padding: 20px;
+}
+.box17{
+    padding: 20px;
+}
+.box18{
+    padding: 20px;
+}
+.box19{
+    padding: 20px;
+}
+.box20{
+    padding: 20px;
+}
+.details1{
+    height: 450px;
+    background-color: white;
+}
+.details2{
+    height: 450px;
+    background-color: white;
+}
+.details3{
+    height: 450px;
+    background-color: white;
+}
+.details4{
+    height: 450px;
+    background-color: white;
+}
+.details5{
+    height: 450px;
+    background-color: white;
+}
+.details6{
+    height: 450px;
+    background-color: white;
+}
+.details7{
+    height: 450px;
+    background-color: white;
+}
+.details8{
+    height: 450px;
+    background-color: white;
+}
+.details9{
+    height: 450px;
+    background-color: white;
+}
+.details10{
+    height: 450px;
+    background-color: white;
+}
+.details11{
+    height: 450px;
+    background-color: white;
+}
+.details12{
+    height: 450px;
+    background-color: white;
+}
+.details13{
+    height: 450px;
+    background-color: white;
+}
+.details14{
+    height: 450px;
+    background-color: white;
+}
+.details15{
+    height: 450px;
+    background-color: white;
+}
+.details16{
+    height: 450px;
+    background-color: white;
+}
+.details17{
+    height: 450px;
+    background-color: white;
+}
+.details18{
+    height: 450px;
+    background-color: white;
+}
+.details19{
+    height: 450px;
+    background-color: white;
+}
+.details20{
+    height: 450px;
+    background-color: white;
+}
+
+
+/* <button> */
+
+.btn{
+    margin-top: 5px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.3s;  
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+}
+
+/* <footer> */
+
+footer{
+    background-color: black;
+    color: white;
+    height: 20vh;
+    padding: 50px;
+    margin-top: 100px;
+}
+.info{
+    padding: 0 230px 0 230px;
+    display: flex;
+}
+.downloadapp{
+    margin-right: 100px;
+}
+.downloadapp img{
+    border-radius: 5px;
+}
+.downloadapp h4{
+    font-size: 15px;
+}
+.downloadapp p{
+    margin: 20px 0 20px 0;
+    font-size: 12px;
+    font-weight: 100;
+}
+.footer-logo{
+    margin-right: 100px;
+    text-align: center;
+}
+.footer-logo img{
+    margin-bottom: 20px;
+}
+.footer-logo p{
+    font-size: 12px;
+}
+.useful-links{
+    margin-right: 50px;
+    text-align: center;
+}
+.useful-links p{
+    font-size: 12px;
+    margin: 5px;
+}
+.follow-us{
+    text-align: center;
+}
+.follow-us p{
+    font-size: 12px;
+    margin: 5px;
+}
+.border-bottom{
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding: 20px;
+}
+.border-bottom p{
+    font-size: 12px;
+}
+.playstore{
+    cursor: pointer;
+}
+.applestore{
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .nav_bar{
+        padding: 10px;
+    }
+    .navi a{
+        font-size: 25px;
+    }
+    .navi{
+        width: 400px;
+    }
+    .bar{
+        padding: 10px;
+    }
+    .barbtn{
+        padding: 10px;
+    }
+    .main{
+        width: 100%;
+        margin-bottom: 1000px;
+    }
+    header{
+        width: 100%;
+        height: 60px;
+        padding: 20px;
+    }
+    .content1{
+        height: 150px;
+        width: 150px;
+    }
+    .content2{
+        height: 150px;
+        width: 150px;
+    }
+    .content3{
+        height: 150px;
+        width: 150px;
+    }
+    .content4{
+        height: 150px;
+        width: 150px;
+    }
+    .content5{
+        height: 150px;
+        width: 150px;
+    }
+    .content6{
+        height: 150px;
+        width: 150px;
+    }
+    .content7{
+        height: 150px;
+        width: 150px;
+    }
+    .content8{
+        height: 150px;
+        width: 150px;
+    }
+    .content9{
+        height: 150px;
+        width: 150px;
+    }
+    .content10{
+        height: 150px;
+        width: 150px;
+    }
+    .content11{
+        height: 150px;
+        width: 150px;
+    }
+    .content12{
+        height: 150px;
+        width: 150px;
+    }
+    .content13{
+        height: 150px;
+        width: 150px;
+    }
+    .content14{
+        height: 150px;
+        width: 150px;
+    }
+    .content15{
+        height: 150px;
+        width: 150px;
+    }
+    .content16{
+        height: 150px;
+        width: 150px;
+    }
+    .content17{
+        height: 150px;
+        width: 150px;
+    }
+    .content18{
+        height: 150px;
+        width: 150px;
+    }
+    .content19{
+        height: 150px;
+        width: 150px;
+    }
+    .content20{
+        height: 150px;
+        width: 150px;
+    }
+    .details1{
+        height: 220px;
+        width: 150px;
+    }
+    .details2{
+        height: 220px;
+        width: 150px;
+    }
+    .details3{
+        height: 220px;
+        width: 150px;
+    }
+    .details4{
+        height: 220px;
+        width: 150px;
+    }
+    .details5{
+        height: 220px;
+        width: 150px;
+    }
+    .details6{
+        height: 220px;
+        width: 150px;
+    }
+    .details7{
+        height: 220px;
+        width: 150px;
+    }
+    .details8{
+        height: 220px;
+        width: 150px;
+    }
+    .details9{
+        height: 220px;
+        width: 150px;
+    }
+    .details10{
+        height: 220px;
+        width: 150px;
+    }
+    .details11{
+        height: 220px;
+        width: 150px;
+    }
+    .details12{
+        height: 220px;
+        width: 150px;
+    }
+    .details13{
+        height: 220px;
+        width: 150px;
+    }
+    .details14{
+        height: 220px;
+        width: 150px;
+    }
+    .details15{
+        height: 220px;
+        width: 150px;
+    }
+    .details16{
+        height: 220px;
+        width: 150px;
+    }
+    .details17{
+        height: 220px;
+        width: 150px;
+    }
+    .details18{
+        height: 220px;
+        width: 150px;
+    }
+    .details19{
+        height: 220px;
+        width: 150px;
+    }
+    .details20{
+        height: 220px;
+        width: 150px;
+    }
+    .p{
+        font-size: 10px;
+    }
+    .btn{
+        padding: 3px;
+        width: 50px;
+        font-size: 10px;
+    }
+    .footer1{
+        width: 100%;
+        height: 100px;
+    }
+    .info1 p{
+        font-size: 25px;
+    }
+}

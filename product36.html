@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Buy-U-An | Check Out</title>
+        <link rel="stylesheet" href="product36.css">
+        <link rel="shortcut icon" type="image/x-icon" href="images/shop logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+
+        <header>
+            <div class="return">
+                <a href="shop.html"><div class="retshop"><img src="images/cart.png" title="Shop" style="width: 50px; height: 50px;"></div></a>
+                <a href="index.html"><div class="rethome"><img src="images/home.png" title="Home" style="width: 50px; height: 50px;"></div></a>
+            </div>
+        </header>
+        <br>
+        <div class="main">
+            <div class="heading">
+                <h1>Checkout Form</h1>
+            </div>
+            <div class="prod">
+                <div class="img">
+                    <img src="men/nike white.jfif" alt="">
+                </div>
+                
+                <div class="form">
+                    <h1>NIKE</h1>
+                    <div style="color:gold;" class="ratings"><br>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div><br>
+                    <P>White t-shirt with maxi<br>logo, short sleeve nike</P><br>
+                    <label for="result">₱</label>
+                    <span id="result">1632</span><br>
+                    <span>Quantity:</span>
+                    <input type="number" id="number" value="1" oninput="multiply()" class="quan">
+                    <div id="actbtn">
+                        <p>Sizes:</p>
+                        <button class="sizebtn">S</button>
+                        <button class="sizebtn activebtn">M</button>
+                        <button class="sizebtn">L</button>
+                        <button class="sizebtn">XL</button>
+                        <button class="sizebtn">XXL</button>
+                      </div>
+
+                    <div class="border"></div><br>
+                    <h1>Personal information</h1><br>
+                    <input class="name" type="text" placeholder="First Name" required>
+                    <input class="name" type="text" placeholder="Last Name" required><br>
+                    <input class="email" type="text" placeholder="Email" required><br>
+                    <input class="email" type="text" placeholder="Phone number" required><br>
+                    <input class="address" type="text" placeholder="Address" required><br>
+                    <input class="optional" type="text" placeholder="Second Address (Optional)"><br>
+
+                </div>
+
+                <div class="next-btn">
+                    <a href="#pbg"><button>Next&#8680;</button></a>
+                </div>
+
+
+                <div class="pbg" id="pbg">
+                    <div class="pbox">
+                        <a href="" class="close">&times;</a>
+                        <div class="pcontent">
+                            <h1>Payment Method</h1><br>
+                            <div class="radio" id="paybtns">
+                                <ul>
+                                    <li><img src="images/cod.jpg" id="image1" class="pbtn" title="cash on delivery"></li>
+                                    <li><img src="images/paypal.png" id="image2" class="pbtn" title="paypal"></li>
+                                    <li><img src="images/paymaya.png" id="image3" class="pbtn" title="paymaya"></li>
+                                    <li><img src="images/debitcard.png" id="image4" class="pbtn" title="debit card"></li>
+                                </ul>
+                            </div><br>
+                            <input class="name" type="text" placeholder="Name on card" required>
+                            <input class="name" type="text" placeholder="Credit card number" required><br>
+                            <input class="name" type="text" placeholder="Expiration" required>
+                            <input class="name" type="text" placeholder="CVV" required><br>
+                            <div class="btn-box">
+                                <a href="#response"><button class="btn">Buy</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- response -->
+                <div class="response" id="response">
+                    <div class="resbox">
+                        <div class="rescont">
+                            <div class="checkmark">
+                                <h1>&#x2713;</h1>
+                            </div><br><br><br>
+                            <div class="resdetails">
+                                <h1>Thank you<br>for your purchase</h1><br>
+                                <p>your details has been successfully submitted</p><br><br>
+                                <div class="okbtn">
+                                    <a href="shop.html"><button type="button">ok</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer class="space">
+            </footer>
+
+
+        </div>
+        
+        <script>
+            //multiplier
+            function multiply() {
+                var number = document.getElementById("number").value;
+                var result = number * 1632;
+                document.getElementById("result").innerHTML = result;
+            }
+            var image1 = document.getElementById("image1");
+            var image2 = document.getElementById("image2");
+            var image3 = document.getElementById("image3");
+            var image4 = document.getElementById("image4");
+      
+            image1.addEventListener("click", function() {
+              image1.style.border = "3px solid red";
+              image2.style.border = "3px solid transparent";
+              image3.style.border = "3px solid transparent";
+              image4.style.border = "3px solid transparent";
+            });
+            image2.addEventListener("click", function() {
+              image1.style.border = "3px solid transparent";    
+              image2.style.border = "3px solid red";
+              image3.style.border = "3px solid transparent";
+              image4.style.border = "3px solid transparent";
+            });
+            image3.addEventListener("click", function() {
+                image1.style.border = "3px solid transparent";  
+                image2.style.border = "3px solid transparent";
+                image3.style.border = "3px solid red";
+                image4.style.border = "3px solid transparent";
+            });
+            image4.addEventListener("click", function() {
+                image1.style.border = "3px solid transparent";  
+                image2.style.border = "3px solid transparent";
+                image3.style.border = "3px solid transparent";
+                image4.style.border = "3px solid red";
+            });
+
+          //size button
+            var header = document.getElementById("actbtn");
+            var btns = header.getElementsByClassName("sizebtn");
+          for(var i = 0; i < btns.length; i++){
+              btns[i].addEventListener("click", function() {
+                var current = 
+                document.getElementsByClassName("activebtn");
+                current[0].className = 
+                current[0].className.replace("activebtn", "");
+                this.className += " activebtn";
+            });
+          };
+          </script>
+    </body>
+</html>
